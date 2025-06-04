@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './sound-pads.css'
 import pads from './pads'
 
-const SoundPad = ({ id, color, on, onClick }: { id: number; color: string; on: boolean; onClick: () => void }) => {
+const SoundPad = ({  color, on, onClick }: { color: string; on: boolean; onClick: () => void }) => {
     return (
         <button
             className={`pad ${on ? 'active' : ''}`}
